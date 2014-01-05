@@ -1,0 +1,26 @@
+使用
+===========
+对于全新的内核：
+	cd $LinuxKernel
+	../checkKernel.sh
+对于已经插桩并重新编译过的内核，直接启动测试
+	cd $LinuxKernel
+	../startTest.sh
+
+
+NOTE：目录结构固定，不能随意更改
+==========
+目录结构：
+                |--backup/ 为另一种上传内核的方案做的准备，存放插桩后的内核压缩包
+                |--checkKernel.sh 自动检测、插桩、编译、启动测试的脚本
+autoTestKernel--|--config/ --|--s2e.h 编译插桩后内核需要的头文件
+							 |--test.lua s2e配置文件
+                |--img/ 存放用于启动内核的img
+				|--kint/ kint工具
+				|--linux-3.5.4/ 用于测试的内核
+				|--README 本文件
+				|--s2e/ s2e工具
+				|--startTest.sh 有了bzImage之后可以进入kernel目录使用此脚本开始测试
+				|--tests/ 存放测试用例，用例名字必须是test，内部目录结构随意
+
+如果要使用kmalloc检测的功能，那么需要根据编译出的内核查找__kmalloc的地址并修改config/test.lua中的对应地址。

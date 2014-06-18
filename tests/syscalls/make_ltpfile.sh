@@ -1,0 +1,1 @@
+gcc-3.4 -g -O2 -g -O2 -fno-strict-aliasing -pipe -Wall  -I/home/xqx/xqx/img/ltp-full-20130503/testcases/kernel/include -I../../../../include -I../../../../include   -L../../../../lib $1   -lltp  -o test -m32

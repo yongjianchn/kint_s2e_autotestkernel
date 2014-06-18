@@ -1,0 +1,50 @@
+1. accept
+2. accept4
+3. access
+4. acct
+5. add_key
+6. adjtimex
+7. bdflush
+8. bind
+9. capget
+10.capset
+11.chdir
+12.chmod
+13.chown
+14.chroot
+15.close
+16.confstr
+17.connect
+18.creat
+19.dup
+20.dup2
+21.eventfd
+22.execv
+23.execvp
+24.exit
+25.faccessat
+26.fadvise
+27.fallocate
+28.fchdir
+29.fchmod
+30.fchmodat
+31.fchown
+32.fchownat
+33.fdatasync
+34.flock
+35.fpathconf
+36.fstat
+37.fstatat
+38.fsync
+39.ftruncate
+40.futimesat
+41.io_cancel
+42.ioctl
+43.io_destroy
+44.io_getevents
+45.ioperm
+46.iopl
+47.io_setup
+48.io_submit
+49.lchown
+50.listen
